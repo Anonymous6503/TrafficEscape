@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class initialDirection
+public class InitialDirection
 {
     public MovingDirection _initialDirection;
 }
@@ -12,20 +12,19 @@ public class initialDirection
 public class WayPointSO : ScriptableObject
 {
     
-    public initialDirection initialMovingDirection; 
     [Space]
     public int index = 0;
     
     public Vector2 movementDir;
     public MovingDirection currentMovingDirection; 
     public List<string> turnType = new List<string>();
+    public List<string> RetreatingTurn = new List<string>();
 
-    public void Initialize()
+    public void Initialize(InitialDirection initialDirection)
     {
         index = 0;
-        currentMovingDirection = initialMovingDirection._initialDirection;
+        currentMovingDirection = initialDirection._initialDirection;
         SetMovementDirection(currentMovingDirection);
-        Debug.Log("Initialized Success");
     }
 
     public void SetMovementDirection(MovingDirection dir)

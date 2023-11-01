@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e89a7c0a3d95514880fe9f079fe5d0c, type: 3}
   m_Name: Right_Turn
   m_EditorClassIdentifier: 
-  name: Move Right
-  initialMovingDirection:
-    _initialDirection: 0
-  index: 1
-  movementDir: {x: 1, y: 0}
-  currentMovingDirection: 3
+  _directionArrow: {fileID: 21300000, guid: d9ac4cca3868529448e16fdf290a8f15, type: 3}
+  index: 0
+  movementDir: {x: 0, y: 1}
+  currentMovingDirection: 0
   turnType:
   - TurnRight
+  RetreatingTurn:
+  - TurnLeft

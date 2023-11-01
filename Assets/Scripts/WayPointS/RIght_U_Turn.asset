@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e89a7c0a3d95514880fe9f079fe5d0c, type: 3}
-  m_Name: RIght_U_Turn
+  m_Name: Right_U_Turn
   m_EditorClassIdentifier: 
-  name: Move Right
-  initialMovingDirection:
-    _initialDirection: 0
-  index: 4
+  _directionArrow: {fileID: 21300000, guid: 95cef5e09006cf249937c88b4a6695e5, type: 3}
+  index: 2
   movementDir: {x: 0, y: -1}
   currentMovingDirection: 1
   turnType:
   - TurnRight
   - TurnRight
-  - TurnRight
+  RetreatingTurn:
+  - TurnLeft
+  - TurnLeft
